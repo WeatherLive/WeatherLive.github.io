@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Weather</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.css" />
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/owfont-regular.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+<body onload="defaultLoad()">
+<div id="container" style="text-align: left;">
+
+    <div id="weatherInfo">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h1 id="cityBar">
+                    <div id="title" class="center-block text-center">Weather</div>
+                    <input id="cityInput" type="text" placeholder="Enter a city..."></input>
+                    <button class="button" onclick="getWeather()">Search</button>
+                </h1>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row" id="data">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <br>
+                <div id="weather" class="text-center">-°</div>
+                <br>
+
+                <div class="text-left"><span class="title">Minimum Temp:</span><span id="minTemp"></span></div>
+                <div><span class="title">Maximum Temp:</span><span id="maxTemp"></span></div>
+                <div><span class="title">Feels Like:</span><span id="feelsLike"></span></div>
+                <br>
+
+                <div><span class="title">Wind Speed:</span><span id="windSpeed"></span></div>
+                <div><span class="title">Wind Direction:</span><span id="windDirection"></span></div>
+                <br>
+
+                <div><span class="title">Sunrise:</span><span id="sunrise"></span></div>
+                <div><span class="title">Sunset:</span><span id="sunset"></span></div>
+                <br>
+
+                <div><span class="title">Latitude:</span><span id="longitude"></span></div>
+                <div><span class="title">Longitude:</span><span id="latitude"></span></div>
+                <br>
+
+                <div><span class="title">Humidity:</span><span id="humidity"></span></div>
+                <div><span class="title">Pressure:</span><span id="pressure"></span></div>
+                <br>
+
+                <div class="row center-block text-center" >
+                    <img id="weatherIcon" src=""><br>
+                    <div id="description" class="text-center">...</div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+
+        </div>
+    </div>
+    <!--<div id="map" class="col-sm-7"></div>-->
+
+
+</div>
+</body>
+<!--
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr3o307hojPIrs5ph16urE3l0YpjhZzc0&callback=initMap">
+</script>
+-->
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#cityBar {
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+#title{
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cityInput{
+    height: 20px;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    border: transparent;
+    background-color: #F9F9F9;
+    /*background-image: linear-gradient(197deg, #FFECF5 0%, #A5BBFF 100%);*/
+    /*box-shadow: inset 0 1px 53px 2px rgba(143, 143, 143, 0.50);*/
+}
+
+.autocomplete-suggestions {
+    border: transparent;
+    background-color: #F9F9F9;
+    color: #7F7F7F;
+    overflow: auto;
+    margin-top: -2px;
+}
+
+.autocomplete-suggestion {
+    padding: 10px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.autocomplete-selected {
+    background-color: white;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: bold;
+    color: black;
+}
+
+.button {
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#weatherInfo{
+    background-color: white;
+    height: 100vh;
+}
+
+.title{
+    font-weight: bold;
+    padding-right: 10px;
+}
+#weather{
+    font-size: 40px;
+
+}
+#description{
+    text-transform:capitalize;
+}
+#weatherIcon{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+/*
+#map{
+    background-color: rgb(0, 255, 76);
+    height: 100vh;
+}
+*/
